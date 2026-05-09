@@ -150,7 +150,7 @@ public class ProstySaperGUI extends JFrame {
         JButton reset = new JButton("Nowa gra");
         reset.setFont(new Font("Segoe UI", Font.BOLD, 12));
         reset.setBackground(new Color(0x95a5a6));
-        reset.setForeground(Color.WHITE);
+        reset.setForeground(Color.BLACK);
         reset.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
         reset.addActionListener(new ActionListener() {
             @Override
@@ -163,7 +163,7 @@ public class ProstySaperGUI extends JFrame {
         JButton menuBtn = new JButton("Menu");
         menuBtn.setFont(new Font("Segoe UI", Font.BOLD, 12));
         menuBtn.setBackground(new Color(0x95a5a6));
-        menuBtn.setForeground(Color.WHITE);
+        menuBtn.setForeground(Color.BLACK);
         menuBtn.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
         menuBtn.addActionListener(new ActionListener() {
             @Override
@@ -181,7 +181,7 @@ public class ProstySaperGUI extends JFrame {
         JButton colorBtn = new JButton("Kolor pola");
         colorBtn.setFont(new Font("Segoe UI", Font.BOLD, 12));
         colorBtn.setBackground(new Color(0x95a5a6));
-        colorBtn.setForeground(Color.WHITE);
+        colorBtn.setForeground(Color.BLACK);
         colorBtn.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
         colorBtn.addActionListener(new ActionListener() {
             @Override
@@ -194,7 +194,7 @@ public class ProstySaperGUI extends JFrame {
         JButton themeBtn = new JButton("Zmień motyw");
         themeBtn.setFont(new Font("Segoe UI", Font.BOLD, 12));
         themeBtn.setBackground(new Color(0x95a5a6));
-        themeBtn.setForeground(Color.WHITE);
+        themeBtn.setForeground(Color.BLACK);
         themeBtn.setBorder(BorderFactory.createEmptyBorder(8, 20, 8, 20));
         themeBtn.addActionListener(new ActionListener() {
             @Override
@@ -248,6 +248,7 @@ public class ProstySaperGUI extends JFrame {
         getContentPane().setBackground(theme.background);
         timeLabel.setForeground(theme.buttonText);
         bombsCounter.setForeground(theme.buttonText);
+        scoreLabel.setForeground(theme.buttonText);
 
         //aktualizacja kolorow przyciskow
         for (int r = 0; r < rows; r++) {
